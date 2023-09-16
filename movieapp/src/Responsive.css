@@ -1,0 +1,19 @@
+@media screen and (max-width:900px) {
+   body {
+      width:100%;
+      box-sizing: border-box;
+   }
+   .ImageContainer {
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+      grid-template-rows: repeat(6,400px);
+      box-sizing: border-box;
+   }
+   .footer {
+      margin-top: 1500px;
+      width: 100%;
+   }
+}
+.clicked {
+background-color: red;
+}

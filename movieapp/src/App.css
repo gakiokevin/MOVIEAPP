@@ -68,7 +68,7 @@ body {
 }
 .wrapper .signIn {
   color: whitesmoke;
-  margin-right: 40px;
+  margin-right: 80px;
 }
 .header .movieInfo {
   margin: 80px 20px;
@@ -142,7 +142,6 @@ body {
   align-self: flex-end;
   margin:10px;
   object-fit: cover;
-  background-color: red;
   
 }
 .footer {
@@ -179,3 +178,32 @@ width:200px;
 color:gray;
 font-size: 15px;
    }
+.loading  {
+  margin:100px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:40px;
+  color:white;
+}
+.loading .loadstatus {
+  width:20px;
+  height: 20px;
+  margin: 30px auto;
+  border-radius: 100%;
+  border-top: 3px solid blue;
+  border-right: 3px solid blue;
+  border-left: 3px solid gray;
+  border-bottom: 3px solid  gray;
+  animation: spin 1s linear .1s  infinite normal;
+
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
