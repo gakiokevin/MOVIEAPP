@@ -18,8 +18,8 @@ const CardImage = ({ images }) => {
           data-testid="movie-poster"
         >
           <img
-            src={"movieapp/dist/favourite.png"}
-            alt={"favourite"}
+            src="movieapp/dist/favourite.png"
+            alt="favourite"
             className={clicked[index] ? "clicked" : " "}
           />
           <p data-testid="movie-releasedate">
