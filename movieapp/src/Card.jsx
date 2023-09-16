@@ -18,7 +18,7 @@ const CardImage = ({ images }) => {
           data-testid="movie-poster"
         >
           <img
-            src={"/favourite.png"}
+            src={"movieapp/dist/favourite.png"}
             alt={"favourite"}
             className={clicked[index] ? "clicked" : " "}
           />
