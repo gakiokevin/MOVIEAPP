@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  background-color:burlywood;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width:1440px;
+}
+.header {
+  padding-top:20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  align-items: start;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10px;
+}
+.wrapper .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .logoImage {
+  background-color: crimson;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 2px 10px;
+  background-image: url("/images/movie.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.logo .logoTitle {
+  color: whitesmoke;
+  padding: 3px;
+  width: 25px;
+  height: 30px;
+  font-size: 20px;
+}
+.wrapper .searchbtn {
+  background: url("/images/baseline_search_black_24dp.png");
+  background-size: 20px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding-left:10px;
+  background-color: whitesmoke;
+}
+.wrapper .searchbtn:focus {
+  border:2px solid lightblue;
+}
+.wrapper .signIn {
+  color: whitesmoke;
+  margin-right: 40px;
+}
+.header .movieInfo {
+  margin: 80px 20px;
+  padding-top: 10px;
+}
+.movieInfo .Title {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.movieInfo .description {
+  color: whitesmoke;
+  margin-bottom: 40px;
+  max-width:500px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.movieInfo button {
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  height: 30px;
+  width: 220px;
+  font-size: 16px;
+  background-image: url("/images/play.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left 10px center;
+  background-color: red;
+  color: white;
+}
+
+.ImageContainer {
+  max-width:1308px;
+  height: 1000px;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(4,24%);
+  grid-template-rows: repeat(3,33%);
+  gap: 12px;
+  box-sizing: border-box;
+}
+.ImageContainer div {
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.ImageContainer div p {
+  position: absolute;
+  top:62%;
+  margin-left:10px;
+  
+  color:grey;
+}
+.ImageContainer div h3 {
+  margin-left: 10px;
+  position: absolute;
+  top:70%;
+  margin-top: 20px;
+}
+
+.ImageContainer div img {
+  width:20px;
+  height:20px;
+  align-self: flex-end;
+  margin:10px;
+  object-fit: cover;
+  background-color: red;
+  
+}
+.footer {
+  width:80%;
+  margin:150px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .icons {
+padding: 12px auto;
+width: 40%;
+}
+.footer .icons,.footer .author, .footer .conditions{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+.footer .icons i {
+  font-size: 20px;
+}
+.footer .conditions {
+width: 60%;
+
+}
+.footer .conditions  p {
+padding: 10px 20px;
+color:darkslategrey;
+font-weight: 500;
+}
+
+.footer .author {
+width:200px;
+color:gray;
+font-size: 15px;
+   }
